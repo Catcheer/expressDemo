@@ -1,0 +1,13 @@
+include ../layout/header.jade
+    p!= title
+    div.auto
+    script(type='text/javascript').
+      window.onload = function () {
+        console.log('onload')
+          let obj = {
+            name: 'xn',
+            age: 23
+        }
+        httpFetch.post('http://192.168.1.185:4000/index', obj)
+          console.log('post method')
+      }

@@ -1,0 +1,30 @@
+<!Doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script src="./js/fetch.js">
+
+  </script>
+
+</head>
+<h1 class=""></h1>
+<p class="auto"></p>
+<p class="adr"></p>
+
+<body>
+
+  <script>
+    window.onload = function () {
+      console.log('onload')
+      let obj = {
+        name: 'xn',
+        age: 23
+      }
+      httpFetch.post('http://192.168.1.185:4000/index', obj)
+      console.log('post method')
+    }
+  </script>
+</body>
+
+</html>
